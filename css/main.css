@@ -1,0 +1,27 @@
+.container {
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.child {
+  width: 200px;
+  height: 200px;
+  background-color: darkcyan;
+}
+
+@media only screen and (max-width: 600px) {
+  .box {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .child {
+    background-color: blue;
+    margin-top: 20px;
+  }
+}
